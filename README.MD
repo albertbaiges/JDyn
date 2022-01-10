@@ -1,35 +1,31 @@
 
 # JDyn
 
-## Albert Baiges
+JDyn is a library build on top of AWS SDK For JavaScrpit v3 client-dybamodb 
+and util-dynamodb to allow developers to work directly with JavaScript Objects.
 
-JDyn is a library build on top of AWS SDK for JavaScript v3 client-dynamodb
-to take full advantage of the Promise Based bahaviour that that version provides.
+All methods will expect JavaScript types and will internally convert those
+into the representations that Amazon DynamoDB understands, expressions and marshalls.
 
-Furthermore, JDyn offers the possibility of working directly with JavaScript Objects
-since it perform internally all the necessary conversions to translate this object
-into the values and objects that client-dynamodb requires. 
-
-This library also uses part of the AWS SDK v2 to perform the marshalling and
-unmarshalling operations that must be inserted and are returned from DynamoDB.
+Furthermore, all returned values will be automatically unmarshalled by the library
+so they can be used directly once retrieved.
 
 ## Support
 
-Currently JDyn only supports the GetItem, PutItem, UpdateItem, DeleteItem operations
-which are the most used operations.
+Currently JDyn only support the operation get, put, update, delete and scane which
+are equivalent to the client-dynamodb commands GetItem, PutItem, UpdateItem, DeleteItem
+and Scan. 
 
-## Must Read
+## Examples
 
-Due to how Dynamo DB is implemented if the path of an update does not exist, 
-AWS SDK for JavaScript v3 client-dynamodb will throw an exception.
-This means that there is the chance that UpdateItem operation fails due to
-an inexistent attribute in the nest.
+Coming soon...
 
-For cases like this on the UpdateItem operation there is the option to disable
-the conversion from JSON and provide an update that has the fields similarly as
-how AWS SDK for JavaScript v3 client-dynamodb expects them.
+## Origin
 
-Luckily JDym provides access to the Converter of the SDK v2 in order to ease
-the process of marshalling necessay inputs.
-All unmarshalling is performed on JDyn side so all results are returned in JSON format. 
+Developed by Albert Baiges as part of its Bachelor's Final Degree Project, and foundamental part
+of the project's API Helky which used an Amazon DynamoDB. Highlight that the version used on the project
+could be seen as a pre-release of what the library current is.
 
+## People
+
+Developed by Albert Baiges.

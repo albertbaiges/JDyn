@@ -1,7 +1,7 @@
 
 # JDyn
 
-JDyn is a library build on top of AWS SDK For JavaScrpit v3 client-dybamodb 
+JDyn is a library built on top of AWS SDK for JavaScrpit v3 client-dybamodb 
 and util-dynamodb to allow developers to work directly with JavaScript Objects.
 
 All methods will expect JavaScript types and will internally convert those
@@ -12,9 +12,11 @@ so they can be used directly once retrieved.
 
 ## Support
 
-Currently JDyn only support the operation get, put, update, delete and scane which
+Currently JDyn only supports the operations get, put, update, delete and scane which
 are equivalent to the client-dynamodb commands GetItem, PutItem, UpdateItem, DeleteItem
 and Scan. 
+
+Batch operations are coming during mid-January 2022
 
 ## Examples
 
@@ -22,8 +24,8 @@ Coming soon...
 
 ## Origin
 
-Developed by Albert Baiges as part of its Bachelor's Final Degree Project, and foundamental part
-of the project's API Helky which used an Amazon DynamoDB. Highlight that the version used on the project
+Developed by Albert Baiges as part of the Bachelor's Final Degree Project, and foundamental part
+of the project's Helky API which used an Amazon DynamoDB. Highlight that the version used on the project
 could be seen as a pre-release of what the library current is.
 
 ## People

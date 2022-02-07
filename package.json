@@ -1,7 +1,7 @@
 {
   "name": "jdyn",
-  "version": "1.0.0",
-  "description": "## Albert Baiges",
+  "version": "0.3.1",
+  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/albertbaiges/JDyn.git"
   },
-  "author": "",
+  "author": "Albert Baiges",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/albertbaiges/JDyn/issues"

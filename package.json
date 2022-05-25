@@ -1,6 +1,6 @@
 {
   "name": "jdyn",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -11,9 +11,16 @@
     "@aws-sdk/util-dynamodb": "^3.45.0",
     "dotenv": "^10.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^28.0.3",
+    "nodemon": "^2.0.16"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node --watch index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --watch",
+    "nodemon": "nodemon",
+    "conditions": "nodemon ./tests/conditionExpressions.spec.js"
   },
   "repository": {
     "type": "git",
